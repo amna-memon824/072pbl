@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Courses</a></li>
+                <li><a href="#">Reminders</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="enrolled-courses">
+            <h2>Enrolled Courses</h2>
+            <ul id="course-list">
+                <!-- Course list will be populated dynamically -->
+            </ul>
+        </section>
+        <section id="lesson-status">
+            <h2>Lesson Completion Status</h2>
+            <table id="lesson-table">
+                <thead>
+                    <tr>
+                        <th>Course</th>
+                        <th>Completed Lessons</th>
+                        <th>Total Lessons</th>
+                    </tr>
+                </thead>
+                <tbody id="lesson-body">
+                    <!-- Lesson status will be populated dynamically -->
+                </tbody>
+            </table>
+        </section>
+        <section id="upcoming-quizzes">
+            <h2>Upcoming Quizzes</h2>
+            <ul id="quiz-list">
+                <!-- Quiz list will be populated dynamically -->
+            </ul>
+        </section>
+        <section id="overall-progress">
+            <h2>Overall Progress</h2>
+            <p id="progress-summary"></p>
+        </section>
+        <section id="study-reminders">
+            <h2>Set Study Reminders</h2>
+            <form id="reminder-form">
+                <input type="date" id="reminder-date" placeholder="Select Date">
+                <input type="text" id="reminder-note" placeholder="Enter Reminder Note">
+                <button type="submit">Set Reminder</button>
+            </form>
+        </section>
+        <section id="customization">
+            <h2>Customization</h2>
+            <button id="theme-switcher">Switch Theme</button>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
